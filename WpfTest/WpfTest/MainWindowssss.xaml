@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="748" Width="972">
+    <Border x:Name="Borderrr"  Visibility="Visible" Background="Black">
+
+        <Grid x:Name="Grides" Visibility="Visible" Background="White" Margin="49,157,82,87">
+            <ListBox Margin="168,94,181,49">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel IsItemsHost="True" Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <Button x:Name="Maya" Content="qwe" Height="300" Width="200" Click="Button_Click"/>
+                <Button Content="234qwe" Height="300" Width="200"/>
+                <Button Content="234qwe" Height="300" Width="200"/>
+            </ListBox>
+            <Grid Background="Blue" x:Name="Gridous" Visibility="Hidden">
+                <ListBox Margin="168,94,181,49">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel IsItemsHost="True" Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <Button Content="234qwe" Height="300" Width="200" Click="Button_Click"/>
+                    <Button Content="234qwe" Height="300" Width="200"/>
+                    <Button Content="234qwe" Height="300" Width="200"/>
+                </ListBox>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

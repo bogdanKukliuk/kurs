@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kursova.Properties
+namespace WpfTest.Properties
 {
 
 

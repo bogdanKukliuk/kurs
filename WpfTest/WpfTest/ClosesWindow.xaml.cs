@@ -10,19 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Kursova
+namespace WpfTest
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ClosesWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ClosesWindow : Window
     {
-        public MainWindow()
+        public ClosesWindow()
         {
             InitializeComponent();
+            this.Closed += ClosesWindow_Closed;
+        }
+        void ClosesWindow_Closed(object sender, EventArgs e)
+        {
+            TestWindow testWindow = new TestWindow();
+            testWindow.ShowDialog();
+            Close();
         }
     }
 }
